@@ -4,9 +4,13 @@
 
 目标：收集中文社区的【免费模型】，并且按[作者名]【角色IP】角色(服饰)2026-5-29的方式命名。
 
--让玩家根据作者来溯源模型，这样玩家更容易找到自己喜欢的模型，
+-https://search.bilibili.com/all
 
--与Elaina69的Yes-Steve-Model-Repo做的事情类似。在YSM官方开发出“游戏内下载模型”的功能前，提供YSM模型整合包下载，降低信息差。
+-https://ifdian.net/
+
+区别：让玩家根据作者来溯源模型，这样玩家更容易找到自己喜欢的模型，
+
+-与 nekohalawrence / FREE-YSM-AUTHOR 做的事情类似，但层级简单一些。
 
 如何下载这些模型？
 
@@ -17,6 +21,9 @@
 -运行：list.bat 
 
 -在 YSM_ZIP_7Z_List.txt 查看您拥有的模型
+
+![模型名称]([Almeta_owx]【galgame】/space.bilibili.com.jpegB站下【ysm免费分享】的视频汇总.jpeg)
+
 
 过程中遇到的难点？
 
