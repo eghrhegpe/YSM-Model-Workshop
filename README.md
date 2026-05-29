@@ -22,9 +22,6 @@
 
 -在 YSM_ZIP_7Z_List.txt 查看您拥有的模型
 
-![1]([Almeta_owx]【galgame】/space.bilibili.com.jpegB站下【ysm免费分享】的视频汇总.jpeg)
-
-
 过程中遇到的难点？
 
 -如果收录【1元模型】、【群限模型】，会影响玩家关注、私信、进群相关作者的的动力。
