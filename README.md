@@ -7,7 +7,7 @@
 
 如何下载？
 
-点击：↗ <>code ↓ dowload zip 即可
+点击：↗ 【 <> code 】    ↓ 【dowload zip】 即可
 
 过程中遇到的难点：
 
