@@ -155,7 +155,7 @@ for /d %%V in ("!MC_ROOT!\versions\*") do (
 )
 
 REM ============================================
-REM   Step 4: 生成统计报告
+REM   Step 4: 生成统计报告（按作者归类列出模型）
 REM ============================================
 echo.
 echo [4/4] 生成统计报告...
@@ -180,6 +180,40 @@ for /d %%V in ("!MC_ROOT!\versions\*") do (
 >>"%REPORT_FILE%" echo    - 7Z 文件：!TOTAL_7Z!
 >>"%REPORT_FILE%" echo.
 >>"%REPORT_FILE%" echo ============================================
+>>"%REPORT_FILE%" echo           按作者归类的模型列表
+>>"%REPORT_FILE%" echo ============================================
+>>"%REPORT_FILE%" echo.
+
+REM 遍历每个作者文件夹，列出其模型文件
+for /d %%D in ("%REPO_DIR%\*") do (
+    set "FolderName=%%~nxD"
+    echo !EXCLUDE_DIRS! | findstr /i "%%~nxD" >nul || (
+        REM 检查该文件夹下是否有模型文件
+        dir /b /s "%%D\*.ysm" "%%D\*.zip" "%%D\*.7z" >nul 2>&1
+        if not errorlevel 1 (
+            >>"%REPORT_FILE%" echo ===== [%%~nxD] ====
+            
+            REM 列出所有 YSM 文件
+            for /f "delims=" %%F in ('dir /b /s /a-d "%%D\*.ysm" 2^>nul') do (
+                >>"%REPORT_FILE%" echo   [YSM] %%~nxF
+            )
+            
+            REM 列出所有 ZIP 文件
+            for /f "delims=" %%F in ('dir /b /s /a-d "%%D\*.zip" 2^>nul') do (
+                >>"%REPORT_FILE%" echo   [ZIP] %%~nxF
+            )
+            
+            REM 列出所有 7Z 文件
+            for /f "delims=" %%F in ('dir /b /s /a-d "%%D\*.7z" 2^>nul') do (
+                >>"%REPORT_FILE%" echo   [7Z]  %%~nxF
+            )
+            
+            >>"%REPORT_FILE%" echo.
+        )
+    )
+)
+
+>>"%REPORT_FILE%" echo ============================================
 >>"%REPORT_FILE%" echo 请查看 readme_list.txt 了解作者详情。
 >>"%REPORT_FILE%" echo ============================================
 
@@ -188,7 +222,7 @@ echo.
 echo 已生成：install_report.txt
 
 REM ============================================
-REM   完成
+REM   Step 5: 完成
 REM ============================================
 echo.
 echo ============================================
