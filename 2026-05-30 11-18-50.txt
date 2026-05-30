@@ -1,0 +1,5 @@
+'��版本配置文件夹' is not recognized as an internal or external command,
+operable program or batch file.
+'��明已汇总至' is not recognized as an internal or external command,
+operable program or batch file.
+  - 统计报告已生成
