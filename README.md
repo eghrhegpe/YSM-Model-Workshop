@@ -8,23 +8,21 @@
 
 -https://ifdian.net/
 
-区别：玩家下载整合包后，可根据作者来溯源模型出处，更容易找到自己喜欢的模型，
+与 nekohalawrence / FREE-YSM-AUTHOR 做的事情类似。
 
--与 nekohalawrence / FREE-YSM-AUTHOR 做的事情类似，但层级简单一些。
+区别是层级简单一些，玩家更容易找到自己喜欢的模型，
 
 如何下载这些模型？
 
 -点击：↗ 【 <> code 】    ↓ 【dowload zip】 即可
 
-如何分享您的模型清单给其他人？
+如何安装模型？
 
--运行：list.bat 
+-运行：YSM-model-Installer.bat
 
--在 YSM_ZIP_7Z_List.txt 查看您拥有的模型
+如何查看拥有的模型、分享您喜欢的模型名称给别人？
 
-如何快速查看作者主页的截图？
-
--使用“浮图秀”浏览器插件。
+-运行bat后，会在 install_report.txt 统计您拥有的所有模型。
 
 国内如何访问GitHub？
 
@@ -44,4 +42,4 @@
 
 -想美化整合包样式，但缺乏相关知识。
 
--无法在游戏外读取YSM文件的readme.txt。收集时，可能会违反二次配布。
+-无法在游戏外读取YSM文件的readme.txt。我的收集可能会违反二次配布，更建议你把文件名复制下来，自行搜索。
